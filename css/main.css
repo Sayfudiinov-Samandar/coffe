@@ -111,9 +111,11 @@ ul{
     text-transform: uppercase;
     color: var(--text-colar-333);
 }
+
 .hero{
     background-image: url("../img/bg-colar-granuli.png");
     padding-top: 45px;
+
     /* padding-bottom: 249px; */
     
 }
@@ -183,6 +185,8 @@ ul{
     margin: var(--box-mrgin-20);
     background-image: url("../img/section-bg-colar-granuli.png");
     padding: 50px 0 50px 0;
+    overflow: hidden;
+
 }
 .our-list{
     width: 1020px;
