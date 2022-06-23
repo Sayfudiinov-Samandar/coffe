@@ -167,7 +167,7 @@ ul{
 }
 .right-good{
     position: relative;
-    right: -60px;
+    right: -90px;
     bottom:  -4px;
 }
 .right-good::before{
@@ -267,7 +267,7 @@ ul{
     width: 402px;
     height: 300px;
     background-repeat: no-repeat;
-    left: calc(50% - 900px);
+    left: calc(50% - 950px);
     top: calc(50% - -392px);
 }
 .our-list-box:nth-child(2)::after{
