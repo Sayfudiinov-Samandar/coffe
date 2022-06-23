@@ -420,6 +420,28 @@ a{
 .green-list-intro{
     list-style: none;
 }
+.green-list-intro:nth-child(1) > .green-kvadrat::after{
+    position: absolute;
+    background-image: url("../img/linya.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
+    width: 533px;
+    height: 5px;
+    top: 33px;
+    left: 70px;
+}
+.green-list-intro:nth-child(2) > .green-kvadrat::after{
+    position: absolute;
+    background-image: url("../img/linya.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
+    width: 533px;
+    height: 5px;
+    top: 33px;
+    left: 48%;
+}
 .green-list-intro:last-child::after{
     position: absolute;
     top: -32%;
