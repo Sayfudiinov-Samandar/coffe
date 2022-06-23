@@ -111,6 +111,10 @@ ul{
     text-transform: uppercase;
     color: var(--text-colar-333);
 }
+nav{
+    position: relative;
+    right: -207px;
+}
 
 .hero{
     background-image: url("../img/bg-colar-granuli.png");
@@ -165,9 +169,10 @@ ul{
 .box-place{
     position: relative;
 }
+
 .right-good{
     position: relative;
-    right: -90px;
+    right: -282px;
     bottom:  -4px;
 }
 .right-good::before{
@@ -181,7 +186,7 @@ ul{
     top: -90px;
 }
 .our-section{
-    position: relative;
+    /* position: relative; */
     margin: var(--box-mrgin-20);
     background-image: url("../img/section-bg-colar-granuli.png");
     padding: 50px 0 50px 0;
@@ -189,6 +194,7 @@ ul{
 
 }
 .our-list{
+    /* position: relative; */
     width: 1020px;
     margin: 0 auto;
 }
@@ -206,25 +212,18 @@ ul{
     text-align: center;
 }
 .our-list-box{
+    position: relative;
     width: 1020px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    /* justify-content: flex-start; */
     align-items: center;
     margin-right: 225px;
+    text-transform: uppercase;
 }
 
 
-.our-img{
-    margin-right: 117px;
-}
-.our-list-box:nth-child(2) > .our-img{
-    margin-right: 0;
-    margin-left: 0px;
-}
-.our-list-box:nth-child(4) > .our-img{
-    margin-right: 0;
-    margin-left: 0px;
-}
+
 
 
 .our-list-in-text{
@@ -248,7 +247,7 @@ ul{
 
 
 
-.our-list-box::before{
+.our-list-box:nth-child(1):before{
     position: absolute;
     background-image: url("../img/first-list.svg");
     content: "";
@@ -256,8 +255,8 @@ ul{
     width: 402px;
     height: 300px;
     background-repeat: no-repeat;
-    left: calc(50% - 830px);
-    top: 40px;
+    left: -52%;
+    top: -25%;
 }
 .our-list-box:nth-child(4):before{
     position: absolute;
@@ -267,8 +266,8 @@ ul{
     width: 402px;
     height: 300px;
     background-repeat: no-repeat;
-    left: calc(50% - 950px);
-    top: calc(50% - -392px);
+    left: -60%;
+    top: -10%;
 }
 .our-list-box:nth-child(2)::after{
     position: absolute;
@@ -278,8 +277,8 @@ ul{
     width: 392px;
     height: 477px;
     background-repeat: no-repeat;
-    right:  calc(50% - 900px);
-    top: calc(50% - 127px);
+    right:  -63%;
+    top: 55%;
 }
 
 .our-list-box:nth-child(even){
