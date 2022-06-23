@@ -155,6 +155,7 @@ a{
     justify-content: space-between;
 }
 .good-link-box{
+    margin: 0;
     width: 193px;
     padding: 16px 24px;
     background: var(--box-colar-0A775F);
@@ -253,11 +254,11 @@ a{
     position: absolute;
     background-image: url("../img/first-list.svg");
     content: "";
-    background-size: contain;
+    /* background-size: contain; */
     width: 402px;
     height: 300px;
     background-repeat: no-repeat;
-    left: -52%;
+    left: -55%;
     top: -25%;
 }
 .our-list-box:nth-child(4)::before{
@@ -275,11 +276,11 @@ a{
     position: absolute;
     background-image: url("../img/secont-list.svg");
     content: "";
-    background-size: contain;
+    /* background-size: contain; */
     width: 392px;
     height: 477px;
     background-repeat: no-repeat;
-    right:  -63%;
+    right:  -56%;
     top: 55%;
 }
 
@@ -484,7 +485,7 @@ a{
     color: var(--text-colar-333);
 }
 
-.good-link-box{
+.green-link-box{
     margin: 0 auto;
     margin-top: 76px;
     display: flex;
