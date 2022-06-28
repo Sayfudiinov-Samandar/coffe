@@ -55,6 +55,9 @@ body{
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+  span{
+    display: block;
+  }
 main{
     flex-grow: 1;
 
@@ -231,6 +234,20 @@ a{
 
 
 /* start how section */
+
+
+
+.how-details{
+    display: flex;
+}
+
+
+
+
+
+
+
+
 .how-section{
     background-image: url("../img/section-bg-colar-granuli.png");
     padding: 50px;
@@ -240,10 +257,12 @@ a{
 }
 
 .how-box{
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
 .how-right-top-select{
+    display: flex;
     position: relative;
     margin-right: 85px;
     font-weight: 700;
@@ -256,14 +275,15 @@ a{
 }
 
 .how-right-top-select::after{
-    position: absolute;
-    top: 38%;
+    /* position: absolute; */
+    /* top: 38%; */
     margin-left: 55px;
     content: "";
     background-image: url("../img/select-right.svg");
+    background-position: calc(50% + 0px) calc(50% + 7px);
     width: 21px;
-    height: 12px;
-    background-size: cover;
+    height: 26px;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 .how-right-top-select:not(:first-child){
@@ -278,11 +298,14 @@ a{
 }
 .how-left-list-box{
     list-style: none;
+    border-bottom: 3px dashed transparent;
+
+
 }
 .how-left-list-box:not(:last-child){
     margin-bottom: 35px;
 }
-.how-left-list-box:first-child{
+.how-left-list-box:hover{
     border-bottom: 3px dashed #C99B67;
 }
 .how-left-list-link{
@@ -294,7 +317,6 @@ a{
 }
 .how-right-form{
     position: relative;
-    display: flex;
 }
 .how-input{
     display: none;
@@ -302,17 +324,7 @@ a{
 .how-label:not(:last-child){
     margin-right: var(--box-mrgin-20);
 }
-.how-label:nth-child(3)::after{
-    background-image: url("../img/secont-list.svg");
-    content: "";
-    position: absolute;
-    background-size: contain;
-    width: 466px;
-    height: 510px;
-    background-repeat: no-repeat;
-    right: -73%;
-    top: 32%;
-}
+
 
 .how-right-radio-box{
     display: block;
@@ -323,11 +335,19 @@ a{
 }
 
 .how-input:checked + .how-right-radio-box{
+    background-color: var(--box-colar-0A775F);
     box-shadow:  0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+.how-input:checked + .how-right-radio-box > .how-right-radio-text{
+    color: #fff;
+}
+.how-input:checked + .how-right-radio-box > .how-right-radio-title{
+    color: #fff;
 }
 .how-right-radio-box-second{
     background-color: #0a775f33;
 }
+
 
 .how-right-radio-title{
     margin-bottom: 10px;
@@ -362,16 +382,29 @@ a{
     padding: 40px 21px 40px 20px;
     background-color: #C99B67;
 }
-.how-summer-box::before{
+.how-box::before{
     position: absolute;
-    background-image: url(../img/first-list.svg);
+    background-image: url("../img/first-list.svg");
     content: "";
     background-size: contain;
     width: 402px;
     height: 300px;
     background-repeat: no-repeat;
-    left: -150%;
-    top: -43%;
+    left: -28%;
+    top: 56%;
+}
+
+.how-box::after{
+    background-image: url("../img/secont-list.svg");
+    content: "";
+    z-index: 5;
+    position: absolute;
+    background-size: contain;
+    width: 466px;
+    height: 510px;
+    background-repeat: no-repeat;
+    right: -39%;
+    top: 13%;
 }
 
 .how-summer-title{
@@ -404,6 +437,8 @@ a{
 }
 
 
+.how-details:nth-child(2) 
+
 
 
 
@@ -435,9 +470,11 @@ a{
     margin: 20px;
 }
 .green-bg-colar-ig{
+    position: relative;
     background-image: url("../img/green-bgcolar-granuli.png");
     padding: 80px 30px;
 }
+
 .green-list{
     position: relative;
     left: -15%;
