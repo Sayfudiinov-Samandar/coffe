@@ -55,9 +55,7 @@ body{
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-  span{
-    display: block;
-  }
+
 main{
     flex-grow: 1;
 
@@ -249,17 +247,45 @@ a{
 
 
 .how-section{
+    position: relative;
     background-image: url("../img/section-bg-colar-granuli.png");
     padding: 50px;
     margin: 20px 20px 50px 20px;
     overflow: hidden;
 
+
 }
+.how-box::before{
+    position: absolute;
+    background-image: url("../img/first-list.svg");
+    content: "";
+    background-size: contain;
+    width: 402px;
+    height: 300px;
+    background-repeat: no-repeat;
+    left: -28%;
+    top: 680px;
+}
+
+
 
 .how-box{
     position: relative;
     display: flex;
     justify-content: space-between;
+}
+
+.how-box::after{
+    background-image: url("../img/secont-list.svg");
+    content: "";
+    z-index: 5;
+    position: absolute;
+    background-size: contain;
+    width: 466px;
+    height: 510px;
+    background-repeat: no-repeat;
+    right: -39%;
+    top: 137px;
 }
 .how-right-top-select{
     display: flex;
@@ -382,30 +408,9 @@ a{
     padding: 40px 21px 40px 20px;
     background-color: #C99B67;
 }
-.how-box::before{
-    position: absolute;
-    background-image: url("../img/first-list.svg");
-    content: "";
-    background-size: contain;
-    width: 402px;
-    height: 300px;
-    background-repeat: no-repeat;
-    left: -28%;
-    top: 56%;
-}
 
-.how-box::after{
-    background-image: url("../img/secont-list.svg");
-    content: "";
-    z-index: 5;
-    position: absolute;
-    background-size: contain;
-    width: 466px;
-    height: 510px;
-    background-repeat: no-repeat;
-    right: -39%;
-    top: 13%;
-}
+
+
 
 .how-summer-title{
     margin-bottom: 14px;
@@ -437,7 +442,11 @@ a{
 }
 
 
-.how-details:nth-child(2) 
+.how-detils[open] .how-right-top-select::after{
+    margin-top: 10px;
+    transform: rotate(180deg);
+
+}
 
 
 
@@ -694,6 +703,8 @@ a{
     text-align: center;
     color: #FFFFFF;
 }
+
+
 
 @keyframes slidedown {
 

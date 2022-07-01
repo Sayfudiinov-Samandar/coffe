@@ -1,4 +1,4 @@
-var elModalOpenBuuton=document.querySelector(".good-link");
+var elModalOpenBuuton=document.querySelector(".modal-open");
 
 var elmodal=document.querySelector(".modal");
 
